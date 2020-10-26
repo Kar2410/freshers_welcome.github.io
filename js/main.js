@@ -15,9 +15,12 @@
         Preloader
     --------------------*/
     $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
-    });
+		$('#preloader-active').delay(1450).fadeOut('slow');
+		$('.preloader').delay(450).addClass('fadePreloaderOut');
+		$('body').delay(450).css({
+			'overflow': 'visible'
+		});
+	});
 
     /*------------------
         Background Set
